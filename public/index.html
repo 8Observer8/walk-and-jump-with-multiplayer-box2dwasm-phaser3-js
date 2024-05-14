@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 07. Controlling the player with the keyboard | Making your first multiplayer Phaser 3 game</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body style="caret-color: transparent;">
+
+    <canvas id="renderCanvas"></canvas>
+
+    <div id="debugInfoPanel" style="position: absolute; display: block; width: 240px; padding: 10px;">
+        <input type="checkbox" id="debugInfoCheckBox">
+        <label for="debugInfoCheckBox">
+            <span style="color: white; font-size: 30px; margin-left: 5px;">Show debug info</span>
+        </label>
+    </div>
+
+    <!-- Since import maps are not yet supported by all browsers, its is
+        necessary to add the polyfill es-module-shims.js -->
+    <script async src="https://8observer8.github.io/libs/es-module-shims@1.10.0/es-module-shims.js"></script>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "phaser3": "https://8observer8.github.io/libs/phaser@3.80.1/phaser.esm.min.js"
+            }
+        }
+    </script>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
